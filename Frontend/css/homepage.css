@@ -1,0 +1,51 @@
+
+
+#addTaskbtn{
+    margin-left: 67.75%;
+    margin-top: 1.25%;
+}
+
+ul.list-group{
+    width: 50%;
+    margin-left: 25%;
+    list-style: none;
+    margin-top: 1%;
+    
+    padding: 0.5%;
+}
+
+div.taskList ul.list-group li{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+div.taskList ul.list-group li span{
+    float: left;
+    width: 85%;
+    border: 1px solid #dc3545;
+    border-radius: 0;
+    font-size: 150%;
+    padding: 0.75%;
+    background: rgb(65, 64, 64);
+    
+    color: #fff;
+    padding-left: 20px;
+}
+
+div.taskList ul.list-group li span:hover{
+    color: #6ce000;
+}
+
+div.taskList ul.list-group li button{
+    width: 15%;
+    height: 43px;
+    font-size: 100%;
+    font-weight: 400;
+    border-radius: 0;
+    border: 1px solid #dc3545;
+    background: #dc3545;
+}
+
+div.taskList ul.list-group li button:hover{
+    color: #fff;
+}

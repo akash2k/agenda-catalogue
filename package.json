@@ -1,0 +1,29 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subhrapaladhi/Todo-app.git"
+  },
+  "author": "pseudorandomguy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subhrapaladhi/Todo-app/issues"
+  },
+  "homepage": "https://github.com/subhrapaladhi/Todo-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.12",
+    "popper.js": "^1.16.0"
+  }
+}

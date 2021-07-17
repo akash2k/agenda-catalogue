@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup</title>
+
+    <!-- Bootstrap -->
+    <link href="Frontend/css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="Frontend/css/style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 logo" style="margin-left:20px;">
+			<img src="Frontend/images/Agenda-Logo.png">
+			</div>
+			
+			<div class="col-md-7 logout" >
+				<button type="button" type="button" 
+				   class="btn btn-outline-primary custo1" onclick=" login_page()">Login</button>
+				<button type="button" class="btn btn-outline-primary active custo1" >Signup</button>
+			</div>
+		</div>
+				<script>
+				function login_page()
+				{
+					 location.href = "/login";
+				} 
+				</script>
+		<div class="container-fluid">
+			
+			<div class="modal-md-dialog" style="width:50%; margin:0 auto;">
+				<div class="modal-content shadow-lg p-3 mb-5 bg-white rounded" style="top:20px; border:solid 1px #F0EDED;">
+					<div class="col-12" style="margin: 20px; margin-left:10px;"><h4 style="color:#F85154">SIGNUP</h4>
+						
+					</div>
+					<div class="col-12" style="margin: 20px; margin-left:10px; text-align: center;"><h4>Tasks for the Day&rarr; DONE!</h4>
+						<h5>Never miss a task again</h5>
+					</div>
+					<div class="col-12" style="padding:10px; width:60%; margin:0 auto;">
+						<form id="signup" onsubmit="event.preventDefault(); return signup()">
+						<div class="col-12" >
+							<div class="form-group w-60">
+								<input type="text" name="username" id="s_username" class="form-control" placeholder="username"></div>
+						</div>
+						<div class="col-12" >
+							<div class="form-group w-60">
+								<input type="password" name="password" id="s_password" class="form-control" placeholder="password"></div>
+						</div><br>
+						<div class="col-12">
+						<button type="button" class="btn btn-primary float-right" onClick="signup()">Signup</button></div>
+				      	</form>
+					</div>
+					<br>
+					
+				</div>
+			</div>
+		</div>
+		
+      
+       
+     
+    <script src="Frontend/scripts/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="Frontend/scripts/popper.min.js"></script>
+    <script src="Frontend/scripts/bootstrap-4.4.1.js"></script>
+	<script src="Frontend/scripts/login_signup.js"></script>
+  </body>
+</html>

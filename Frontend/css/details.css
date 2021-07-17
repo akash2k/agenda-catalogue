@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(245, 244, 235);;
+}
+
+.head{
+    background: rgb(30, 144, 255);;
+    padding: 1%;
+    box-shadow: 5px 5px 15px rgb(187, 163, 28);
+    color: rgb(0, 0, 0);
+}
+
+.head h1{
+    text-align: center;
+    font-size: 320%;
+    margin-top: 1px;
+}
+.head h2{
+    text-align: center;
+    font-size: 200%;
+}
+
+/* ----------------- */
+
+.details{
+    border: 5px solid rgb(70, 62, 62);
+    background: rgb(255, 255, 255);
+    width: 80%;
+    margin: 2% 0 1% 10%;
+    padding: 1%;
+    box-shadow: 1px 5px 5px;
+}
+
+div.details div#addDetails button{
+    margin-left: 45%;
+}
+
+div#form form#detailsform textarea#details{
+    display: block;
+    width: 50%;
+    height: 200px;
+    margin-top: 2%;
+    margin-left: 23.5%;
+    border: 2px solid rgb(43, 44, 46);
+    font-size: 125%;
+}
+
+div#form form#detailsform input{
+    margin-top: 2%;
+    margin-left: 46.5%;
+}
+
+div#showdetails h3{
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 10%;
+    padding-top: 1%;
+    width: 80%;
+    border-top: solid rgb(17, 17, 17);
+}
+
+div#showdetails div#detailstext{
+    border: 2px solid rgb(94, 255, 0);
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 23.5%;
+    padding: 2.5% 1%;
+    font-size: 125%;
+}

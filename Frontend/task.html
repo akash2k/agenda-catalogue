@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task</title>
+
+    <!-- Bootstrap -->
+    <link href="Frontend/css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="Frontend/css/style.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="../Frontend/css/homepage.css">
+
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 logo" style="margin-left:20px;">
+			<img src="Frontend/images/Agenda-Logo.png">
+			</div>
+			
+			
+		</div>
+		
+			<script>
+					function signup_page()
+					{
+						 location.href = "/signup";
+					} 
+			</script>
+													  
+		<div class="container-fluid">
+			
+			<div class="modal-md-dialog" style="width:70%; margin:0 auto;">
+				<div class="modal-content shadow-lg p-3 mb-5 bg-white rounded" style="top:10px; border:solid 1px #fffeee; ">
+					<div class="col-12" style="margin: 20px; margin-left:10px;"><h4 style="color:#F85154">TASK</h4>
+						
+					</div>
+					<div class="col-10" style="margin:0 auto; margin-top:-10px;text-align: center;"><h4>Pending &rarr; DONE!</h4>
+						<h5>Never miss a task again</h5>
+					</div>
+					<form action="" onsubmit="event.preventDefault(); return input()">
+					<div class="col-9" style="padding:0px; margin:0 auto;">
+						
+						<div class="col-12" >
+							<div class="form-group w-60">
+								<input type="text" placeholder="Enter New Task" class="form-control" name="task"></div>
+						</div><br>
+						<div class="col-12">
+						<button type="submit" id="addTaskbtn" class="btn btn-primary float-right">Add Task</button>
+						</div>
+				    	
+					</div>
+				    </form>
+					<div style="border-bottom:1px dashed #F39090;margin:0 auto; margin-top:3%; margin-bottom:3%; width:90%;">&nbsp;</div>
+				
+					<!--card start-->
+					<div class="modal-content" style="width:90%; margin:0 auto; border:none">
+						
+						<div class="taskList">
+							<ul class="list-group">
+								<li><span class="list-group-item" id=d${task._id}>${task.task}</span>
+									
+									<div class="col-12">
+										<button class="btn btn-danger" id=i${task._id}>Delete</button>
+									</div>
+								</li>
+							</ul>                                                   <!-- the js file will send the task the user has input -->
+						</div>
+						<br><br>
+					</div>
+					<!--card end-->
+				</div>
+			</div>
+		</div>
+		
+      
+       
+     
+    <script src="Frontend/scripts/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="Frontend/scripts/popper.min.js"></script>
+    <script src="Frontend/scripts/bootstrap-4.4.1.js"></script>
+	<script src="Frontend/scripts/homescript.js"></script>
+  </body>
+</html>

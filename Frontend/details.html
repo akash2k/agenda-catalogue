@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="../Frontend/css/details.css">
+    
+    <title>Todo</title>
+</head>
+<body>
+    <div class="head">
+        <h1>Todo &rarr; DONE!</h1>
+        <h2>Never miss a task again</h2>
+    </div>
+
+    <div class="details">
+        <div id="addDetails">
+            <button class="btn btn-dark" onclick="showTextBox()"></button>           <!--&#43; Details-->
+        </div>
+        <div id="form">
+            <form action="" id="detailsform" onsubmit="event.preventDefault(); return addDetails()">
+                <textarea class="form-control" name="details" id="details" cols="30" rows="10" placeholder="add details about the task here..." form="detailsform"></textarea>
+                <input class="btn btn-outline-primary" type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="showdetails">
+            <h3>Task Details</h3>
+            <div id="detailstext" style="white-space: pre-wrap;"></div>
+        </div>
+
+    </div>
+    <script src="../Frontend/scripts/detailsscript.js"></script>
+</body>
+</html>

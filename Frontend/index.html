@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agenda-Catalogue</title>
+
+    <!-- Bootstrap -->
+    <link href="Frontend/css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="Frontend/css/style.css" rel="stylesheet" type="text/css">    
+
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 logo" style="margin-left:20px;">
+			<img src="Frontend/images/Agenda-Logo.png">
+			</div>
+			
+			<div class="col-md-7 logout" >
+				<button type="submit" class="btn btn-outline-primary custo1" onclick=" login_page()">Login</button>
+				<button type="submit" class="btn btn-outline-primary custo1" onclick="signup_page()">Signup</button>
+			</div>
+			<script>
+				function login_page()
+				{
+					 location.href = "/login";
+				} 
+				</script>
+			<script>
+				function signup_page()
+				{
+					 location.href = "/signup";
+				} 
+				</script>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        
+		<div class="container-fluid" >	
+			<div class="modal-md-dialog" style="width:50%; margin:0 auto;">
+				<div class="modal-content shadow-lg p-3 mb-5 bg-white rounded" style="top:20px; border:solid 1px #F0EDED;">
+					<div class="row-cols-12" style="padding:10px;">
+						<div ng-app="myApp" ng-controller="personCtrl">
+							<div class="col-md-7 logout" >
+							<button class="btn btn-outline-primary custo1" ng-click="toggle()">About the project</button>
+							</div>
+							<p ng-show="myVar"><br><br>The aim of this web application is to enable the user to create a personalized to-do list so that they can manage their tasks throughout the day without missing any task. It is a very easy to use to-do web app with minimalistic design. Every person who wants to use the app just needs to create an account. The user can login using his username and password. Authentication ensures that no one else can tamper with their list.</p>
+							<div class="col-md-7 logout" >
+								<button class="btn btn-outline-primary custo1" ng-click="toggle1()">You can contact us at </button>
+								</div>
+								<center><p ng-show="myVa"><br><b><u>Email</u></b><br> aryan.khandelwal2018@vitstudent.ac.in<br>akash.rustagi2018@vitstudent.ac.in<br><b><u>Phone:</u></b><br> 9880991748 </p></center>
+					</div>
+					<br>
+					
+					<br>
+					
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<script>
+			var app = angular.module('myApp', []);
+			app.controller('personCtrl', function($scope) {
+				$scope.myVar = false;
+				$scope.myVa = false;
+				$scope.toggle = function() {
+					$scope.myVar = !$scope.myVar;
+				};
+				$scope.toggle1 = function() {
+					$scope.myVa = !$scope.myVa;
+				};
+			});
+		</script> 
+		
+      
+       
+     
+    <script src="Frontend/scripts/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="Frontend/scripts/popper.min.js"></script>
+    <script src="Frontend/scripts/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

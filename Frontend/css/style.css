@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image: url("../images/Image 1.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+.logo{
+	padding:10px;
+}
+
+.ulli-style{
+
+list-style:none;
+
+}
+
+.cont-table-row{
+border-bottom:solid 1px #cccccc; padding:15px; padding-bottom:0px;
+}
+
+
+.delete-col{
+	background-color:red;
+	padding:7px;
+	text-align:center;
+	color:#ffffff;
+}
+
+.custo1{
+	color:#A3A3A3;
+	padding:30px;
+	border:none;
+	
+}
+
+.custo1:hover{
+	border-bottom:solid 2px red;
+	background-color:#F8F8F8;
+	color:#737373;
+}
+
+.logout{
+	text-align: right;
+	padding: 10px;
+	top:20px;
+	right:20px;
+}
+
+.modal-content  {
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    border-radius: 10px !important; 
+	 -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+
+h3,h2,h4{
+	color:#3B3B3B;
+}
+
+.container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 60%;
+}
